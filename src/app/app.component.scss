@@ -1,0 +1,23 @@
+@mixin font-face($font-family, $url) {
+    @font-face {
+        font-family: "#{$font-family}";
+        src: url("#{$url}") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+  
+@include font-face(
+    "TTNorms-Regular",
+    "/assets/fonts/TTNorms-Regular.otf"
+);
+
+@include font-face(
+    "TTNorms-Medium",
+    "/assets/fonts/TTNorms-Medium.otf"
+);
+
+@include font-face(
+    "TTNorms-Bold",
+    "/assets/fonts/TTNorms-Bold.otf"
+);

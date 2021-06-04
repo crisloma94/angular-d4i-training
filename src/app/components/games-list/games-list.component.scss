@@ -1,0 +1,10 @@
+.gamesList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 70px;
+    padding: 100px 150px;
+    &__card {
+        text-decoration: none;
+    }
+}
