@@ -21,3 +21,8 @@
     "TTNorms-Bold",
     "/assets/fonts/TTNorms-Bold.otf"
 );
+
+html, *, *:before, *:after {
+    box-sizing: border-box;
+}
+

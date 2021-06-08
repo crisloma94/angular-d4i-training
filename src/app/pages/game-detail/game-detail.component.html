@@ -1,0 +1,21 @@
+<div class="gameDetail" *ngIf="game">    
+    <div class="gameDetail__hero">
+        <img src="{{game.img}}" alt="{{game.name}} poster" class="gameDetail__heroImg">
+        <button (click)="goBack()" class="gameDetail__backButton">            
+            <mat-icon class="material-icons-outlined gameDetail__backIcon" aria-hidden="false" aria-label="Back icon">chevron_left</mat-icon>
+        </button>
+        <div class="gameDetail__tags">
+            <mat-icon class="material-icons-outlined gameDetail__tagsIcon" aria-hidden="false" aria-label="New release icon">new_releases</mat-icon>
+            New release
+        </div>
+        <h1 class="gameDetail__title">{{game.name}}</h1>
+    </div>
+    <div class="gameDetail__priceHeader">
+        <div class="gameDetail__price">{{game.price}} USD</div>
+        <app-button text="Install game"></app-button>
+    </div>
+    <div class="gameDetail__description">
+        <img src="{{game.img}}" alt="{{game.name}} poster" class="gameDetail__img">
+        <div class="gameDetail__summary">{{game.summary}}</div>
+    </div>
+</div>

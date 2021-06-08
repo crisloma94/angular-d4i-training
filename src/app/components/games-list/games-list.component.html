@@ -1,6 +1,9 @@
 <div class="gamesList">
-    <a class="gamesList__card" *ngFor="let game of games"
-        routerLink="/detail/{{game.id}}">
-        <app-game-card [game]="game"></app-game-card>
-    </a>
+    <div class="gamesList__title">Bestsellers</div>
+    <div class="gamesList__content">
+        <a class="gamesList__card" *ngFor="let game of games"
+            routerLink="/detail/{{game.id}}">
+            <app-game-card [game]="game"></app-game-card>
+        </a>
+    </div>
 </div>
