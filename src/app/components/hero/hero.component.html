@@ -1,3 +1,8 @@
-<div class="hero">
-    <p>hero is here</p>
+<div class="hero" *ngIf="game">
+    <img src="{{game.img}}" alt="{{game.name}} poster" class="hero__bgImg">
+    <div class="hero__eyebrow">Awarded and recommended</div>
+    <h1 class="hero__title">{{game.name}}</h1>
+    <div class="hero__description" [innerHTML]="game.summary"></div>
+    <app-button class="hero__primaryButton" text="Install game"></app-button>
+    <app-button class="hero__secondaryButton" text="Add to favorites"></app-button>
 </div>

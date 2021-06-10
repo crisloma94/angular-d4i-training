@@ -27,6 +27,10 @@ export class GameService {
     );
   }
 
+  getFeaturedGame(): Observable<Game> {
+    return this.getGame(11);
+  }
+
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error(error); // log to console instead
