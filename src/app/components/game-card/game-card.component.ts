@@ -14,4 +14,10 @@ export class GameCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  buyGameOnClick(event: Event): void {
+    event.stopPropagation();
+    event.preventDefault();
+    console.log("clicked buy on: ", this.game.name);
+  }
+
 }

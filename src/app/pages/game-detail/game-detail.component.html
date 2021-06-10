@@ -12,10 +12,10 @@
     </div>
     <div class="gameDetail__priceHeader">
         <div class="gameDetail__price">{{game.price}} USD</div>
-        <app-button text="Install game"></app-button>
+        <app-button text="Install game" (onClick)="installGameOnClick($event)"></app-button>
     </div>
     <div class="gameDetail__description">
         <img src="{{game.img}}" alt="{{game.name}} poster" class="gameDetail__img">
-        <div class="gameDetail__summary">{{game.summary}}</div>
+        <div class="gameDetail__summary" [innerHTML]="game.summary"></div>
     </div>
 </div>

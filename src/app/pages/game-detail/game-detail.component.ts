@@ -27,4 +27,9 @@ export class GameDetailComponent implements OnInit {
     this.location.back();
   }
 
+  installGameOnClick(event: Event): void {
+    event.stopPropagation();
+    console.log("clicked installed");
+  }
+
 }
