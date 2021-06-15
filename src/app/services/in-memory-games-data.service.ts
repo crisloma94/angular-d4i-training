@@ -5,7 +5,7 @@ import { Game } from './../interfaces/game';
 @Injectable({
   providedIn: 'root',
 })
-export class InMemoryDataGamesService implements InMemoryDbService {
+export class InMemoryGamesDataService implements InMemoryDbService {
   createDb() {
     const games = [
       { id: 11, name: 'Horizon Hero Dawn', price: 189.95, img: '/assets/images/horizon-zero-dawn.jpg', summary: '<p>This is a summary text</p><p>This is a summary <b>paragraph</b></p>' },

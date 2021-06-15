@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataGamesService } from './../app/services/in-memory-games-data.service';
+import { InMemoryGamesDataService } from './../app/services/in-memory-games-data.service';
 import { ButtonComponent } from './components/button/button.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -37,7 +37,7 @@ import { DomSanitizer } from '@angular/platform-browser';
     HttpClientModule,
     NoopAnimationsModule,
     MatIconModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataGamesService, {
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryGamesDataService, {
       dataEncapsulation: false,
     }),
     NoopAnimationsModule

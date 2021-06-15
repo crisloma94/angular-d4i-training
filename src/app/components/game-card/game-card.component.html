@@ -1,5 +1,5 @@
 <div class="gameCard">
-    <img src="{{game.img}}" alt="{{game.name}} poster" class="gameCard__img">
+    <img *ngIf="game.img" src="{{game.img}}" alt="{{game.name}} poster" class="gameCard__img">
     <div class="gameCard__info">
         <h2 class="gameCard__title">{{game.name}}</h2>
         <p class="gameCard__price">{{game.price}} USD</p>
